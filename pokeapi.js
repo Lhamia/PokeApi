@@ -48,6 +48,7 @@ function search() { //search es la función que se ejecuta cuando pulsamos el bo
     let filtrados = pokemons.filter((pokemon) => {    //aqui los filtro por nombre
       return pokemon.name.includes (input$$.value); //aqui compruebo que el nombre incluye lo que puse en el input
     });
+    
     filtrados.forEach((pokemon) => {
       printPokemon(pokemon);  // aqui recorro los filtrados para pintarlos
     });
